@@ -1,0 +1,25 @@
+# Imports
+```{r}
+library(rio)
+```
+
+# Loading the dataset
+```{r}
+bupa_df <- import("G:/projects/liver_disease_prediction/dataset/BUPA/bupa.csv")
+ilpd_df <- import("G:/projects/liver_disease_prediction/dataset/ILPD/ilpd.csv")
+```
+
+# Comparing columns
+```{r}
+names(bupa_df)
+```
+
+```{r}
+names(ilpd_df)
+```
+common features
+```{r}
+intersect(names(bupa_df), names(ilpd_df))
+```
+
+
